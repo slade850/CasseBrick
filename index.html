@@ -117,7 +117,7 @@
     
     x += dx;
     y += dy;
-    requestAnimationFrame(draw);
+    //requestAnimationFrame(draw);
 }
     
     document.addEventListener("keydown", keyDownHandler, false);
@@ -180,7 +180,8 @@ function drawLives() {
     ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 }
 
-draw();
+setInterval(draw, 7);
+//draw();
 </script>
 </body>
 </html>
